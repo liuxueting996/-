@@ -1,7 +1,6 @@
-merge m:1 city  using"D:\jd2\新质生产力对绿色全要素生产率\异质性.dta"
-drop if _merge==2
-drop _merge
 
+
+use panel.dta,clear
 *描述性统计
 logout, save(描述性统计6) word replace: tabstat Gtfp Npro GDP  People Fin Urban Gov Ep , stats(N mean sd min p50 max) f(%10.4f) c(s)
 
